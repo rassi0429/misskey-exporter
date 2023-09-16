@@ -4,7 +4,7 @@ import {getUsers} from "./lib.mjs";
 const app = express()
 app.use(express.json())
 app.listen(5000, () => {
-  console.log("server started at localhost:3000")
+  console.log("server started at localhost:5000")
 })
 
 let cache = ""
