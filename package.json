@@ -1,0 +1,17 @@
+{
+  "name": "docker-build-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.mjs",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2"
+  }
+}
