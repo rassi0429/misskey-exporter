@@ -27,7 +27,7 @@ ${data.map(userMetrics).join("\n")}
 }
 
 const userMetrics = (user: {id: string, username: string, notesCount: string}) => {
-  return `user_notes{user_id="${user.id}" username="${user.username}"} ${user.notesCount}`
+  return `user_notes{user_id="${user.id}" username="${user.username}" misskey="${process.env.instance}"} ${user.notesCount}`
 }
 
 // 初回取得
