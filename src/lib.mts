@@ -1,6 +1,6 @@
 
 export const getUsers = async (offset = 0):Promise<any> => {
-  const res = await fetch("https://misskey.neos.love/api/users", {
+  const res = await fetch(`https://${process.env.instance}/api/users`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
